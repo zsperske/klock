@@ -76,10 +76,11 @@ enableFeaturePreview('GRADLE_METADATA')
 ### Use with Kotlin-JVM
 
 ```groovy
-def klockVersion = "1.7.3"
+def klockVersion = "2.0.7"
 
 repositories {
-    jcenter()
+    mavenCentral()
+    //Versions older than 2.0.7 are available on jcenter()
 }
 
 dependencies {
